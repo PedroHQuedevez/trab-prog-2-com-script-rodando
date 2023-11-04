@@ -23,7 +23,6 @@ int main(int argc, char *argv[])
     CriaTrilhaPacman(pacman, ObtemNumeroLinhasMapa(mapa), ObtemNumeroColunasMapa(mapa));
     AtualizaTrilhaPacman(pacman);
 
-    // tPacman *pacmanContador = CriaPacman(ObtemPosicaoItemMapa(mapa, '>'));
     RelatorioInicializacao(mapa, pacman, argv[1]);
 
     tlistafantasmas *listaFantasmas = CriaListaFantasmas(mapa);
@@ -69,8 +68,8 @@ int main(int argc, char *argv[])
         MovePacman(pacman, mapa, c);
         MoveFantasmas(mapa, listaFantasmas);
         // AdicionaContadorMovimentosPorDirecao(comando, pacman); //se eu deletar os contadores da main o scrip roda.. ?????????????
-        // não posso usar essa função dentro da pacman e nem modificar valores durante
-        // a função movepacman por que o script não aceita;
+        // não posso usar essa função dentro da pacman e nem modificar valores durante a função movepacman por que o script não aceita;
+
         AtualizaItemMapa(mapa, ObtemPosicaoPacman(pacmanClone), ' ');
 
         if (EncontrouComidaMapa(mapa, ObtemPosicaoPacman(pacman)) == true)
@@ -109,7 +108,7 @@ int main(int argc, char *argv[])
                 InsereNovoMovimentoSignificativoPacman(pacman, c, "fim de jogo por encostar em um fantasma");
                 // AdicionaContadorMovimentosSignificatos(pacman);
             }
-            // EscreveRelatorioSaida(RelatorioSaida, comando, mapa, listaFantasmas, pacman, pacman);
+
             EscreveRelatorioSaida(RelatorioSaida, comando, mapa, listaFantasmas, pacman);
             fprintf(RelatorioSaida, "Game over!\nPontuacao final: %d\n", ObtemPontuacaoAtualPacman(pacman));
             AtualizaTrilhaPacman(pacman);
@@ -120,7 +119,7 @@ int main(int argc, char *argv[])
 
         if (VerificaGanhouJogo(mapa, pacman) == true)
         {
-            // EscreveRelatorioSaida(RelatorioSaida, comando, mapa, listaFantasmas, pacman, pacman);
+
             EscreveRelatorioSaida(RelatorioSaida, comando, mapa, listaFantasmas, pacman);
             fprintf(RelatorioSaida, "Voce venceu!\nPontuacao final: %d\n", ObtemPontuacaoAtualPacman(pacman));
             AtualizaTrilhaPacman(pacman);
