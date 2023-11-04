@@ -20,7 +20,10 @@ int main(int argc, char *argv[])
     tMapa *mapa = CriaMapa(argv[1]);
 
     tPacman *pacman = CriaPacman(ObtemPosicaoItemMapa(mapa, '>'));
-    tPacman *pacmanContador = CriaPacman(ObtemPosicaoItemMapa(mapa, '>'));
+    CriaTrilhaPacman(pacman, ObtemNumeroLinhasMapa(mapa), ObtemNumeroColunasMapa(mapa));
+    AtualizaTrilhaPacman(pacman);
+
+    // tPacman *pacmanContador = CriaPacman(ObtemPosicaoItemMapa(mapa, '>'));
     RelatorioInicializacao(mapa, pacman, argv[1]);
 
     tlistafantasmas *listaFantasmas = CriaListaFantasmas(mapa);
@@ -62,18 +65,93 @@ int main(int argc, char *argv[])
 
         tPacman *pacmanClone = ClonaPacman(pacman);
         tlistafantasmas *listaClonada = ClonaListaFantasmas(listaFantasmas);
+
+        MovePacman(pacman, mapa, c);
+        MoveFantasmas(mapa, listaFantasmas);
+        AdicionaContadorMovimentosPorDirecao(comando, pacman);
+
+        // printf("\n %d %d - %d %d\n", ObtemLinhaPosicao(pacman->posicaoAtual), ObtemColunaPosicao(pacman->posicaoAtual), ObtemLinhaPosicao(pacmanClone->posicaoAtual), ObtemColunaPosicao(pacmanClone->posicaoAtual));
+
+        AtualizaItemMapa(mapa, ObtemPosicaoPacman(pacmanClone), ' ');
+
+        if (EncontrouComidaMapa(mapa, ObtemPosicaoPacman(pacman)) == true)
+        {
+            AdicionaContadorFrutasPorDirecao(comando, pacman);
+            AtualizaItemMapa(mapa, ObtemPosicaoPacman(pacman), ' ');
+
+            InsereNovoMovimentoSignificativoPacman(pacman, c, "pegou comida");
+            AdicionaContadorMovimentosSignificatos(pacman);
+        }
+        else if (PossuiTunelMapa(mapa))
+        {
+
+            if (EntrouTunel(ObtemTunelMapa(mapa), ObtemPosicaoPacman(pacman)) == true)
+            {
+                EntraTunelMapa(mapa, ObtemPosicaoPacman(pacman));
+            }
+        }
+        else if (EncontrouParedeMapa(mapa, ObtemPosicaoPacman(pacman)) == true)
+        {
+            AdicionaContadorColisoesPorDirecao(comando, pacman);
+            AtualizaPosicao(pacman->posicaoAtual, pacmanClone->posicaoAtual);
+
+            InsereNovoMovimentoSignificativoPacman(pacman, c, "colidiu com a parede");
+            AdicionaContadorMovimentosSignificatos(pacman);
+        }
+
+        AtualizaItemMapa(mapa, ObtemPosicaoPacman(pacman), '>');
+
+        if ((VerificaPerdeuJogo(mapa, pacman, listaFantasmas, pacmanClone, listaClonada) == true) || EstaVivoPacman(pacman) == 0)
+        {
+            if (EstaVivoPacman(pacman) == 0)
+            {
+                pacman->estaVivo = 0;
+
+                InsereNovoMovimentoSignificativoPacman(pacman, c, "fim de jogo por encostar em um fantasma");
+                AdicionaContadorMovimentosSignificatos(pacman);
+            }
+            // EscreveRelatorioSaida(RelatorioSaida, comando, mapa, listaFantasmas, pacman, pacman);
+            EscreveRelatorioSaida(RelatorioSaida, comando, mapa, listaFantasmas, pacman);
+            fprintf(RelatorioSaida, "Game over!\nPontuacao final: %d\n", ObtemPontuacaoAtualPacman(pacman));
+            AtualizaTrilhaPacman(pacman);
+            DesalocaPacman(pacmanClone);
+            DesalocaListaFantasmas(listaClonada);
+            break;
+        }
+
+        if (VerificaGanhouJogo(mapa, pacman) == true)
+        {
+            // EscreveRelatorioSaida(RelatorioSaida, comando, mapa, listaFantasmas, pacman, pacman);
+            EscreveRelatorioSaida(RelatorioSaida, comando, mapa, listaFantasmas, pacman);
+            fprintf(RelatorioSaida, "Voce venceu!\nPontuacao final: %d\n", ObtemPontuacaoAtualPacman(pacman));
+            AtualizaTrilhaPacman(pacman);
+            DesalocaPacman(pacmanClone);
+            DesalocaListaFantasmas(listaClonada);
+
+            break;
+        }
+
+        EscreveRelatorioSaida(RelatorioSaida, comando, mapa, listaFantasmas, pacman);
+        AtualizaTrilhaPacman(pacman);
+        DesalocaPacman(pacmanClone);
+        DesalocaListaFantasmas(listaClonada);
     }
+
     fclose(entrada);
 
     FechaRelatorioSaida(RelatorioSaida);
 
-    RelatorioEstatisticas(pacmanContador, argv[1]);
+    RelatorioEstatisticas(pacman, argv[1]);
 
-    RelatorioRanking(pacmanContador, argv[1]);
+    RelatorioRanking(pacman, argv[1]);
 
-    RelatorioResumo(pacmanContador, argv[1]);
+    RelatorioResumo(pacman, argv[1]);
 
-    SalvaTrilhaPacman(pacmanContador);
+    SalvaTrilhaPacman(pacman);
+
+    DesalocaPacman(pacman);
+    DesalocaMapa(mapa);
+    DesalocaListaFantasmas(listaFantasmas);
 
     return 0;
 }

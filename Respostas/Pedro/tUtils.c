@@ -64,7 +64,7 @@ bool VerificaPerdeuJogo(tMapa *mapa, tPacman *pacman, tlistafantasmas *listaFant
 bool VerificaGanhouJogo(tMapa *mapa, tPacman *pacman)
 {
     int numeroFrutasComidasTotal = pacman->nFrutasComidasBaixo + pacman->nFrutasComidasCima + pacman->nFrutasComidasDireita + pacman->nFrutasComidasEsquerda;
-    if (numeroFrutasComidasTotal == ObtemQuantidadeFrutasIniciaisMapa(mapa) && pacman->estaVivo == 1)
+    if ((numeroFrutasComidasTotal == ObtemQuantidadeFrutasIniciaisMapa(mapa)))
     {
         return true;
     }

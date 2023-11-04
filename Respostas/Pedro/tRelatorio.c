@@ -69,7 +69,7 @@ FILE *AbreRelatorioSaida(char *caminhoConfig)
     return arq;
 }
 
-void PrintaMapaSaida(FILE *relatorioSaida, char comando, tMapa *mapa, tlistafantasmas *listaFantasmas, tPacman *pacman, tPacman *pacmanContador)
+void PrintaMapaSaida(FILE *relatorioSaida, char comando, tMapa *mapa, tlistafantasmas *listaFantasmas, tPacman *pacman)
 {
     fprintf(relatorioSaida, "Estado do jogo apos o movimento '%c':\n", comando);
     for (int i = 0; i < ObtemNumeroLinhasMapa(mapa); i++)
@@ -92,15 +92,16 @@ void PrintaMapaSaida(FILE *relatorioSaida, char comando, tMapa *mapa, tlistafant
                 }
             }
         }
+        fprintf(relatorioSaida, "\n");
     }
-    fprintf(relatorioSaida, "Pontuacao: %d\n\n", ObtemPontuacaoAtualPacman(pacmanContador));
+    fprintf(relatorioSaida, "Pontuacao: %d\n\n", ObtemPontuacaoAtualPacman(pacman));
 }
 
-void EscreveRelatorioSaida(FILE *RelatorioSaida, char comando, tMapa *mapa, tlistafantasmas *listaFantasmas, tPacman *pacman, tPacman *pacmanContador)
+void EscreveRelatorioSaida(FILE *RelatorioSaida, char comando, tMapa *mapa, tlistafantasmas *listaFantasmas, tPacman *pacman)
 {
-    fprintf(RelatorioSaida, "Estado do jogo apos o movimento '%c':\n", comando);
-    // PrintaMapaComMovimentacaoFantasmasRelatorioSaida(mapa, listaFantasmas, RelatorioSaida, pacman);
-    fprintf(RelatorioSaida, "Pontuacao: %d\n\n", ObtemPontuacaoAtualPacman(pacmanContador));
+    // fprintf(RelatorioSaida, "Estado do jogo apos o movimento '%c':\n", comando);
+    PrintaMapaSaida(RelatorioSaida, comando, mapa, listaFantasmas, pacman);
+    // fprintf(RelatorioSaida, "Pontuacao: %d\n\n", ObtemPontuacaoAtualPacman(pacman));
 }
 
 void FechaRelatorioSaida(FILE *RelatorioSaida)
@@ -293,17 +294,17 @@ void RelatorioResumo(tPacman *pacman, char *caminhoConfig)
 
         if (strcmp(pacman->historicoDeMovimentosSignificativos[i]->acao, "pegou comida") == 0)
         {
-            fprintf(arq, "Movimento %d (%c) pegou comida\n", (ObtemNumeroMovimento(pacman->historicoDeMovimentosSignificativos[i]) + 1), RetornaComandoRelatorioResumo(pacman->historicoDeMovimentosSignificativos[i]->comando));
+            fprintf(arq, "Movimento %d (%c) pegou comida\n", (ObtemNumeroMovimento(pacman->historicoDeMovimentosSignificativos[i])), RetornaComandoRelatorioResumo(pacman->historicoDeMovimentosSignificativos[i]->comando));
         }
 
         if (strcmp(pacman->historicoDeMovimentosSignificativos[i]->acao, "colidiu com a parede") == 0)
         {
-            fprintf(arq, "Movimento %d (%c) colidiu com a parede\n", (ObtemNumeroMovimento(pacman->historicoDeMovimentosSignificativos[i]) + 1), RetornaComandoRelatorioResumo(pacman->historicoDeMovimentosSignificativos[i]->comando));
+            fprintf(arq, "Movimento %d (%c) colidiu com a parede\n", (ObtemNumeroMovimento(pacman->historicoDeMovimentosSignificativos[i])), RetornaComandoRelatorioResumo(pacman->historicoDeMovimentosSignificativos[i]->comando));
         }
 
         if (strcmp(pacman->historicoDeMovimentosSignificativos[i]->acao, "fim de jogo por encostar em um fantasma") == 0)
         {
-            fprintf(arq, "Movimento %d (%c) fim de jogo por encostar em um fantasma\n", (ObtemNumeroMovimento(pacman->historicoDeMovimentosSignificativos[i]) + 1), RetornaComandoRelatorioResumo(pacman->historicoDeMovimentosSignificativos[i]->comando));
+            fprintf(arq, "Movimento %d (%c) fim de jogo por encostar em um fantasma\n", (ObtemNumeroMovimento(pacman->historicoDeMovimentosSignificativos[i])), RetornaComandoRelatorioResumo(pacman->historicoDeMovimentosSignificativos[i]->comando));
         }
     }
 

@@ -8,5 +8,6 @@ void AdicionaContadorMovimentosPorDirecao(char direcao, tPacman *Pacman);
 void AdicionaContadorFrutasPorDirecao(char direcao, tPacman *pacman);
 void AdicionaContadorColisoesPorDirecao(char direcao, tPacman *pacman);
 void AdicionaContadorMovimentosSignificatos(tPacman *pacman);
+void IniciaTrilhaComFlag(tPacman *pacman);
 
 #endif

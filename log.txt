@@ -1,0 +1,227 @@
+Rodando o script do Aluno - Arquivos header necessários do professor existem na pasta Includes
+ - Arquivos objetos necessários do professor existem na pasta Gabarito-obj.
+#######################################
+ALUNO: Pedro
+#######################################
+CRIANDO O DIRETÓRIO DE RESULTADO PARA Pedro:
+ - Diretório Resultados/Pedro criado com sucesso!
+ - Diretório Resultados/Pedro/tPacman criado com sucesso!
+ - Diretório Resultados/Pedro/tMapa criado com sucesso!
+ - Diretório Resultados/Pedro/tMovimento criado com sucesso!
+ - Diretório Resultados/Pedro/tTunel criado com sucesso!
+ - Diretório Resultados/Pedro/tPosicao criado com sucesso!
+ - Diretório Resultados/Pedro/completo criado com sucesso!
+ - Diretório Resultados/Pedro/main criado com sucesso!
+ - Arquivos criados: ok!
+
+CHECKANDO OS ARQUIVOS DO ALUNO:
+ - Arquivo esperado 'Respostas/Pedro/tPacman.c' encontrado!
+ - Arquivo esperado 'Respostas/Pedro/tPacman.h' encontrado!
+ - Arquivo esperado 'Respostas/Pedro/tMapa.c' encontrado!
+ - Arquivo esperado 'Respostas/Pedro/tMapa.h' encontrado!
+ - Arquivo esperado 'Respostas/Pedro/tMovimento.c' encontrado!
+ - Arquivo esperado 'Respostas/Pedro/tMovimento.h' encontrado!
+ - Arquivo esperado 'Respostas/Pedro/tTunel.c' encontrado!
+ - Arquivo esperado 'Respostas/Pedro/tTunel.h' encontrado!
+ - Arquivo esperado 'Respostas/Pedro/tPosicao.c' encontrado!
+ - Arquivo esperado 'Respostas/Pedro/tPosicao.h' encontrado!
+ - Arquivo esperado 'Respostas/Pedro/main.c' encontrado!
+ - Arquivos esperados enviados: Ok!
+
+COPIANDO OS ARQUIVOS PARA A PASTA DE RESULTADO DO ALUNO:
+ - Pasta tPacman:
+ - Copiando os Casos de teste para a pasta Resultados/Pedro/tPacman
+ - Copiando os 'Includes/*.h' do professor para a pasta Resultados/Pedro/tPacman
+ - Copiando os 'Respostas/Pedro/src_file_name.h' do aluno para a pasta Resultados/Pedro/tPacman
+ - Copiando os 'Respostas/Pedro/src_file_name.c' do aluno para a pasta Resultados/Pedro/tPacman
+ - Pasta tMapa:
+ - Copiando os Casos de teste para a pasta Resultados/Pedro/tMapa
+ - Copiando os 'Includes/*.h' do professor para a pasta Resultados/Pedro/tMapa
+ - Copiando os 'Respostas/Pedro/src_file_name.h' do aluno para a pasta Resultados/Pedro/tMapa
+ - Copiando os 'Respostas/Pedro/src_file_name.c' do aluno para a pasta Resultados/Pedro/tMapa
+ - Pasta tMovimento:
+ - Copiando os Casos de teste para a pasta Resultados/Pedro/tMovimento
+ - Copiando os 'Includes/*.h' do professor para a pasta Resultados/Pedro/tMovimento
+ - Copiando os 'Respostas/Pedro/src_file_name.h' do aluno para a pasta Resultados/Pedro/tMovimento
+ - Copiando os 'Respostas/Pedro/src_file_name.c' do aluno para a pasta Resultados/Pedro/tMovimento
+ - Pasta tTunel:
+ - Copiando os Casos de teste para a pasta Resultados/Pedro/tTunel
+ - Copiando os 'Includes/*.h' do professor para a pasta Resultados/Pedro/tTunel
+ - Copiando os 'Respostas/Pedro/src_file_name.h' do aluno para a pasta Resultados/Pedro/tTunel
+ - Copiando os 'Respostas/Pedro/src_file_name.c' do aluno para a pasta Resultados/Pedro/tTunel
+ - Pasta tPosicao:
+ - Copiando os Casos de teste para a pasta Resultados/Pedro/tPosicao
+ - Copiando os 'Includes/*.h' do professor para a pasta Resultados/Pedro/tPosicao
+ - Copiando os 'Respostas/Pedro/src_file_name.h' do aluno para a pasta Resultados/Pedro/tPosicao
+ - Copiando os 'Respostas/Pedro/src_file_name.c' do aluno para a pasta Resultados/Pedro/tPosicao
+ - Pasta completo:
+ - Copiando os Casos de teste para a pasta Resultados/Pedro/completo
+ - Copiando os 'Respostas/Pedro/*.h' do aluno para a pasta Resultados/Pedro/completo
+ - Copiando os 'Respostas/Pedro/*.c' do aluno para a pasta Resultados/Pedro/completo
+ - Pasta main:
+ - Copiando os Casos de teste para a pasta Resultados/Pedro/main
+ - Copiando os 'Includes/*.h' do professor para a pasta Resultados/Pedro/main
+ - Copiando os 'Respostas/Pedro/*.h' do aluno para a pasta Resultados/Pedro/main
+ - Copiando os 'Respostas/Pedro/*.c' do aluno para a pasta Resultados/Pedro/main
+ - Arquivos copiados: ok!
+
+COMPILANDO OS ARQUIVOS NA PASTA DE RESULTADO DO ALUNO:
+ - Copiando os arquivos objetos do professor para cada subpasta do Resultado do Pedro:
+ - Copiando o Gabarito-obj/tPacman.o para a pasta Resultados/Pedro/tMapa
+ - Copiando o Gabarito-obj/tPacman.o para a pasta Resultados/Pedro/tMovimento
+ - Copiando o Gabarito-obj/tPacman.o para a pasta Resultados/Pedro/tTunel
+ - Copiando o Gabarito-obj/tPacman.o para a pasta Resultados/Pedro/tPosicao
+ - Copiando o Gabarito-obj/tPacman.o para a pasta Resultados/Pedro/main
+ - Copiando o Gabarito-obj/tMapa.o para a pasta Resultados/Pedro/tPacman
+ - Copiando o Gabarito-obj/tMapa.o para a pasta Resultados/Pedro/tMovimento
+ - Copiando o Gabarito-obj/tMapa.o para a pasta Resultados/Pedro/tTunel
+ - Copiando o Gabarito-obj/tMapa.o para a pasta Resultados/Pedro/tPosicao
+ - Copiando o Gabarito-obj/tMapa.o para a pasta Resultados/Pedro/main
+ - Copiando o Gabarito-obj/tMovimento.o para a pasta Resultados/Pedro/tPacman
+ - Copiando o Gabarito-obj/tMovimento.o para a pasta Resultados/Pedro/tMapa
+ - Copiando o Gabarito-obj/tMovimento.o para a pasta Resultados/Pedro/tTunel
+ - Copiando o Gabarito-obj/tMovimento.o para a pasta Resultados/Pedro/tPosicao
+ - Copiando o Gabarito-obj/tMovimento.o para a pasta Resultados/Pedro/main
+ - Copiando o Gabarito-obj/tTunel.o para a pasta Resultados/Pedro/tPacman
+ - Copiando o Gabarito-obj/tTunel.o para a pasta Resultados/Pedro/tMapa
+ - Copiando o Gabarito-obj/tTunel.o para a pasta Resultados/Pedro/tMovimento
+ - Copiando o Gabarito-obj/tTunel.o para a pasta Resultados/Pedro/tPosicao
+ - Copiando o Gabarito-obj/tTunel.o para a pasta Resultados/Pedro/main
+ - Copiando o Gabarito-obj/tPosicao.o para a pasta Resultados/Pedro/tPacman
+ - Copiando o Gabarito-obj/tPosicao.o para a pasta Resultados/Pedro/tMapa
+ - Copiando o Gabarito-obj/tPosicao.o para a pasta Resultados/Pedro/tMovimento
+ - Copiando o Gabarito-obj/tPosicao.o para a pasta Resultados/Pedro/tTunel
+ - Copiando o Gabarito-obj/tPosicao.o para a pasta Resultados/Pedro/main
+ - Copiando o Gabarito-obj/main.o para a pasta Resultados/Pedro/tPacman
+ - Copiando o Gabarito-obj/main.o para a pasta Resultados/Pedro/tMapa
+ - Copiando o Gabarito-obj/main.o para a pasta Resultados/Pedro/tMovimento
+ - Copiando o Gabarito-obj/main.o para a pasta Resultados/Pedro/tTunel
+ - Copiando o Gabarito-obj/main.o para a pasta Resultados/Pedro/tPosicao
+ - Arquivos Compilados: ok!
+
+LINKANDO OS ARQUIVOS COMPILADOS:
+ - Pasta tPacman:
+ - Gerando o binário prog linkando com o(s) arquivo(s) tPacman/*.o
+ - Arquivos Linkados: Ok! Binário prog gerado com sucesso.
+ - Arquivo de output gerado: Resultados/Pedro/tPacman/result_linking.txt
+ - Pasta tMapa:
+ - Gerando o binário prog linkando com o(s) arquivo(s) tMapa/*.o
+ - Arquivos Linkados: Ok! Binário prog gerado com sucesso.
+ - Arquivo de output gerado: Resultados/Pedro/tMapa/result_linking.txt
+ - Pasta tMovimento:
+ - Gerando o binário prog linkando com o(s) arquivo(s) tMovimento/*.o
+ - Arquivos Linkados: Ok! Binário prog gerado com sucesso.
+ - Arquivo de output gerado: Resultados/Pedro/tMovimento/result_linking.txt
+ - Pasta tTunel:
+ - Gerando o binário prog linkando com o(s) arquivo(s) tTunel/*.o
+ - Arquivos Linkados: Ok! Binário prog gerado com sucesso.
+ - Arquivo de output gerado: Resultados/Pedro/tTunel/result_linking.txt
+ - Pasta tPosicao:
+ - Gerando o binário prog linkando com o(s) arquivo(s) tPosicao/*.o
+ - Arquivos Linkados: Ok! Binário prog gerado com sucesso.
+ - Arquivo de output gerado: Resultados/Pedro/tPosicao/result_linking.txt
+ - Pasta completo:
+ - Gerando o binário prog linkando com o(s) arquivo(s) completo/*.o
+ - Arquivos Linkados: Ok! Binário prog gerado com sucesso.
+ - Arquivo de output gerado: Resultados/Pedro/completo/result_linking.txt
+ - Pasta main:
+ - Gerando o binário prog linkando com o(s) arquivo(s) main/*.o
+ - Arquivos Linkados: Ok! Binário prog gerado com sucesso.
+ - Arquivo de output gerado: Resultados/Pedro/main/result_linking.txt
+
+EXECUTANDO O VALGRIND EM CADA CASO:
+ - Pasta tPacman / Caso 01:
+ - Arquivo de output gerado: Resultados/Pedro/tPacman/Casos/01/result_valgrind.txt.
+ - Valgrind: Incorreto! allocs: 34,402, frees: 34,402, errors: 280 | Desconto do valgrind 30.00%
+ - Resultado para o estatisticas.txt: Incorreto!
+ - Resultado para o inicializacao.txt: Ok! Peso: 1.0
+ - Resultado para o ranking.txt: Incorreto!
+ - Resultado para o resumo.txt: Incorreto!
+ - Resultado para o saida.txt: Incorreto!
+ - O aluno não gerou o arquivo de saída Resultados/Pedro/tPacman/Casos/01/saida/trilha.txt, considerando resultado incorreto!
+ - Pasta tMapa / Caso 01:
+ - Arquivo de output gerado: Resultados/Pedro/tMapa/Casos/01/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 34,821, frees: 34,821, errors: 0 | Desconto do valgrind: 0.0%
+ - Resultado para o estatisticas.txt: Ok! Peso: 1.5
+ - Resultado para o inicializacao.txt: Ok! Peso: 1.0
+ - Resultado para o ranking.txt: Ok! Peso: 1.5
+ - Resultado para o resumo.txt: Ok! Peso: 1.5
+ - Resultado para o saida.txt: Ok! Peso: 3.0
+ - Resultado para o trilha.txt: Ok! Peso: 1.5
+ - Pasta tMovimento / Caso 01:
+ - Arquivo de output gerado: Resultados/Pedro/tMovimento/Casos/01/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 34,839, frees: 34,839, errors: 0 | Desconto do valgrind: 0.0%
+ - Resultado para o estatisticas.txt: Ok! Peso: 1.5
+ - Resultado para o inicializacao.txt: Ok! Peso: 1.0
+ - Resultado para o ranking.txt: Ok! Peso: 1.5
+ - Resultado para o resumo.txt: Ok! Peso: 1.5
+ - Resultado para o saida.txt: Ok! Peso: 3.0
+ - Resultado para o trilha.txt: Ok! Peso: 1.5
+ - Pasta tTunel / Caso 01:
+ - Arquivo de output gerado: Resultados/Pedro/tTunel/Casos/01/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 34,839, frees: 34,839, errors: 0 | Desconto do valgrind: 0.0%
+ - Resultado para o estatisticas.txt: Ok! Peso: 1.5
+ - Resultado para o inicializacao.txt: Ok! Peso: 1.0
+ - Resultado para o ranking.txt: Ok! Peso: 1.5
+ - Resultado para o resumo.txt: Ok! Peso: 1.5
+ - Resultado para o saida.txt: Ok! Peso: 3.0
+ - Resultado para o trilha.txt: Ok! Peso: 1.5
+ - Pasta tPosicao / Caso 01:
+ - Arquivo de output gerado: Resultados/Pedro/tPosicao/Casos/01/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 34,839, frees: 34,839, errors: 0 | Desconto do valgrind: 0.0%
+ - Resultado para o estatisticas.txt: Ok! Peso: 1.5
+ - Resultado para o inicializacao.txt: Ok! Peso: 1.0
+ - Resultado para o ranking.txt: Ok! Peso: 1.5
+ - Resultado para o resumo.txt: Ok! Peso: 1.5
+ - Resultado para o saida.txt: Ok! Peso: 3.0
+ - Resultado para o trilha.txt: Ok! Peso: 1.5
+ - Pasta completo / Caso 01:
+ - Arquivo de output gerado: Resultados/Pedro/completo/Casos/01/result_valgrind.txt.
+ - Valgrind: Incorreto! allocs: 34,309, frees: 34,309, errors: 281 | Desconto do valgrind 30.00%
+ - O aluno não gerou o arquivo de saída Resultados/Pedro/completo/Casos/01/saida/estatisticas.txt, considerando resultado incorreto!
+ - O aluno não gerou o arquivo de saída Resultados/Pedro/completo/Casos/01/saida/inicializacao.txt, considerando resultado incorreto!
+ - O aluno não gerou o arquivo de saída Resultados/Pedro/completo/Casos/01/saida/ranking.txt, considerando resultado incorreto!
+ - O aluno não gerou o arquivo de saída Resultados/Pedro/completo/Casos/01/saida/resumo.txt, considerando resultado incorreto!
+ - Resultado para o saida.txt: Incorreto!
+ - O aluno não gerou o arquivo de saída Resultados/Pedro/completo/Casos/01/saida/trilha.txt, considerando resultado incorreto!
+ - Pasta main / Caso 01:
+ - Arquivo de output gerado: Resultados/Pedro/main/Casos/01/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 34,354, frees: 34,354, errors: 0 | Desconto do valgrind: 0.0%
+ - O aluno não gerou o arquivo de saída Resultados/Pedro/main/Casos/01/saida/estatisticas.txt, considerando resultado incorreto!
+ - O aluno não gerou o arquivo de saída Resultados/Pedro/main/Casos/01/saida/inicializacao.txt, considerando resultado incorreto!
+ - O aluno não gerou o arquivo de saída Resultados/Pedro/main/Casos/01/saida/ranking.txt, considerando resultado incorreto!
+ - O aluno não gerou o arquivo de saída Resultados/Pedro/main/Casos/01/saida/resumo.txt, considerando resultado incorreto!
+ - Resultado para o saida.txt: Incorreto!
+ - Resultado para o trilha.txt: Incorreto!
+
+#######################################
+RESULTADOS FINAIS
+#######################################
+
+----------------------------------------------------------------------------
+Nome 0: Pedro
+ - Resumo dos Resultados:
+ - Resumo das Compilações: 7 compilações corretas de 7 no total
+ - Resumo das Linkagens: 7 linkagens corretas de 7 no total
+ - Valgrinds Corretos tPacman: 0 valgrinds corretos de 1 (teve desconto na nota para a pasta tPacman, olhar detalhamento nos prints acima!)
+ - Valgrinds Corretos tMapa: 1 valgrinds corretos de 1 (não teve desconto na nota)
+ - Valgrinds Corretos tMovimento: 1 valgrinds corretos de 1 (não teve desconto na nota)
+ - Valgrinds Corretos tTunel: 1 valgrinds corretos de 1 (não teve desconto na nota)
+ - Valgrinds Corretos tPosicao: 1 valgrinds corretos de 1 (não teve desconto na nota)
+ - Valgrinds Corretos completo: 0 valgrinds corretos de 1 (teve desconto na nota para a pasta completo, olhar detalhamento nos prints acima!)
+ - Valgrinds Corretos main: 1 valgrinds corretos de 1 (não teve desconto na nota)
+ - Cômputo final das Notas:
+ - Pasta tPacman (peso 2.5): 1 resultados corretos de 6 / Nota .17
+ - Pasta tMapa (peso 2.5): 6 resultados corretos de 6 / Nota 2.50
+ - Pasta tMovimento (peso 0.5): 6 resultados corretos de 6 / Nota .50
+ - Pasta tTunel (peso 0.5): 6 resultados corretos de 6 / Nota .50
+ - Pasta tPosicao (peso 0.5): 6 resultados corretos de 6 / Nota .50
+ - Pasta completo (peso 0.0): 0 resultados corretos de 6 / Nota 0
+ - Pasta main (peso 3.5): 0 resultados corretos de 6 / Nota 0
+ - Nota Final Pedro: 4.17
+
+----------------------------------------------------------------------------
+
+Arquivo CSV Resultado.csv com os resultados finais foi gerado na pasta raíz!
+
+
