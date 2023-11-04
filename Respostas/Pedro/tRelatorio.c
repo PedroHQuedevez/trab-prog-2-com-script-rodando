@@ -14,7 +14,7 @@ void RelatorioInicializacao(tMapa *mapa, tPacman *Pacman, char *caminhoConfig)
 
     FILE *arq;
 
-    sprintf(path, "saida/inicializacao.txt");
+    sprintf(path, "inicializacao.txt");
 
     arq = fopen(path, "w");
 
@@ -39,7 +39,7 @@ void RelatorioEstatisticas(tPacman *pacman, char *caminhoConfig)
 
     FILE *arq;
 
-    sprintf(path, "saida/estatisticas.txt");
+    sprintf(path, "estatisticas.txt");
 
     arq = fopen(path, "w");
 
@@ -62,7 +62,7 @@ FILE *AbreRelatorioSaida(char *caminhoConfig)
 
     FILE *arq;
 
-    sprintf(path, "saida/saida.txt");
+    sprintf(path, "saida.txt");
 
     arq = fopen(path, "w");
 
@@ -186,7 +186,7 @@ void RelatorioRanking(tPacman *pacman, char *caminhoConfig)
 
     FILE *arq;
 
-    sprintf(path, "saida/ranking.txt");
+    sprintf(path, "ranking.txt");
 
     arq = fopen(path, "w");
 
@@ -279,7 +279,7 @@ void RelatorioResumo(tPacman *pacman, char *caminhoConfig)
 
     FILE *arq;
 
-    sprintf(path, "saida/resumo.txt");
+    sprintf(path, "resumo.txt");
 
     arq = fopen(path, "w");
 

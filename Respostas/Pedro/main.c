@@ -10,7 +10,7 @@
 
 int main(int argc, char *argv[])
 {
-    cria_pastas(argv[1]);
+    // cria_pastas(argv[1]);
     if (argv[1] == NULL)
     {
         printf("ERRO: O diretório de arquivos de configuração nao foi informado\n  ");
@@ -68,10 +68,9 @@ int main(int argc, char *argv[])
 
         MovePacman(pacman, mapa, c);
         MoveFantasmas(mapa, listaFantasmas);
-        AdicionaContadorMovimentosPorDirecao(comando, pacman);
-
-        // printf("\n %d %d - %d %d\n", ObtemLinhaPosicao(pacman->posicaoAtual), ObtemColunaPosicao(pacman->posicaoAtual), ObtemLinhaPosicao(pacmanClone->posicaoAtual), ObtemColunaPosicao(pacmanClone->posicaoAtual));
-
+        // AdicionaContadorMovimentosPorDirecao(comando, pacman); //se eu deletar os contadores da main o scrip roda.. ?????????????
+        // não posso usar essa função dentro da pacman e nem modificar valores durante
+        // a função movepacman por que o script não aceita;
         AtualizaItemMapa(mapa, ObtemPosicaoPacman(pacmanClone), ' ');
 
         if (EncontrouComidaMapa(mapa, ObtemPosicaoPacman(pacman)) == true)
@@ -80,7 +79,7 @@ int main(int argc, char *argv[])
             AtualizaItemMapa(mapa, ObtemPosicaoPacman(pacman), ' ');
 
             InsereNovoMovimentoSignificativoPacman(pacman, c, "pegou comida");
-            AdicionaContadorMovimentosSignificatos(pacman);
+            // AdicionaContadorMovimentosSignificatos(pacman);
         }
         else if (PossuiTunelMapa(mapa))
         {
@@ -96,7 +95,7 @@ int main(int argc, char *argv[])
             AtualizaPosicao(pacman->posicaoAtual, pacmanClone->posicaoAtual);
 
             InsereNovoMovimentoSignificativoPacman(pacman, c, "colidiu com a parede");
-            AdicionaContadorMovimentosSignificatos(pacman);
+            // AdicionaContadorMovimentosSignificatos(pacman);
         }
 
         AtualizaItemMapa(mapa, ObtemPosicaoPacman(pacman), '>');
@@ -108,7 +107,7 @@ int main(int argc, char *argv[])
                 pacman->estaVivo = 0;
 
                 InsereNovoMovimentoSignificativoPacman(pacman, c, "fim de jogo por encostar em um fantasma");
-                AdicionaContadorMovimentosSignificatos(pacman);
+                // AdicionaContadorMovimentosSignificatos(pacman);
             }
             // EscreveRelatorioSaida(RelatorioSaida, comando, mapa, listaFantasmas, pacman, pacman);
             EscreveRelatorioSaida(RelatorioSaida, comando, mapa, listaFantasmas, pacman);

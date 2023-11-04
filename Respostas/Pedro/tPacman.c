@@ -124,7 +124,7 @@ void SalvaTrilhaPacman(tPacman *pacman)
 
     FILE *arq;
 
-    sprintf(path, "saida/trilha.txt");
+    sprintf(path, "trilha.txt");
 
     arq = fopen(path, "w");
 
@@ -180,13 +180,13 @@ void DesalocaPacman(tPacman *pacman)
 {
     DesalocaPosicao(pacman->posicaoAtual);
 
-    for (int i = 0; i <= pacman->nMovimentosSignificativos; i++)
-    {
+    for (int i = 0; i < pacman->nMovimentosSignificativos; i++) // usar o < funciona no teste completo mas não no tpacman, e <= no tpacman mas não no completo;
+    {                                                           // entre outros momentos que dependendo de onde coloco o contador de mov.significativo aparecem outros erros em lugares diferentes e resolvendo outros;
         DesalocaMovimento(pacman->historicoDeMovimentosSignificativos[i]);
     }
     free(pacman->historicoDeMovimentosSignificativos);
 
-    for (int i = 0; i < ((pacman->nLinhasTrilha * pacman->nColunasTrilha)); i++)
+    for (int i = 0; i < (pacman->nLinhasTrilha); i++)
     {
         free(pacman->trilha[i]);
     }
